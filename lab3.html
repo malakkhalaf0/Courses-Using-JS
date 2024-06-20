@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+
+  align-items: center;
+  background-color: rgb(224, 229, 233);
+  flex-direction: column;
+}
+.flexx {
+  display: flex;
+
+  align-items: center;
+  
+  flex-direction: row;
+}
+
+.flex-container > div {
+  border: 2px solid rgb(129, 116, 116);
+  border-radius: 6px;
+    padding: 10px; 
+  margin:5px;
+  padding: 3px;
+  width: 350px; 
+  height: 40px;
+}
+
+.edit{
+    background-color: #54a5e8;
+    margin: 3px;
+    margin-left: 50px;
+    padding: 3px;
+}
+.confirm{
+    background-color: #4cee7d;
+    margin: 3px;
+    padding: 3px;
+}
+.delete{
+    background-color: #f65353;
+    margin: 3px;
+    padding: 3px;
+}
+</style>
+</head>
+<body>
+
+  <h1 style="text-align: center; color: #093960;">Lab3</h1> 
+  <button onclick="saveToDatabase()"> save to data base </button>  
+<div id="mm" class="flex-container">
+  <div id="kk" class="flexx">
+  <input type="text" id="cname" name="fname" value="John">
+    <button onclick="addNewCourse(document.getElementById('cname').value)">ADD NEW </button>   <br><br>
+  </div>
+
+</div>
+
+</body>
+<script src="lab3.js"></script>
+
+</html>
+
+
